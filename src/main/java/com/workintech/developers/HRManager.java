@@ -11,8 +11,8 @@ public class HRManager extends Employee{
         super(id, name, salary);
     }
 
-    public HRManager(long id, String name, double salary, SeniorDeveloper[] seniorDevelopers,
-                     MidDeveloper[] midDevelopers, JuniorDeveloper[] juniorDevelopers) {
+    public HRManager(long id, String name, double salary, JuniorDeveloper[] juniorDevelopers,
+                     MidDeveloper[] midDevelopers, SeniorDeveloper[] seniorDevelopers ) {
         super(id, name, salary);
         this.seniorDevelopers = seniorDevelopers;
         this.midDevelopers = midDevelopers;
@@ -21,7 +21,7 @@ public class HRManager extends Employee{
 
     @Override
     public void work(){
-        System.out.println("HRManager starts to working");
+        System.out.println(getName() + " HRManager starts to working");
         setSalary(30000);
     }
 
@@ -65,6 +65,7 @@ public class HRManager extends Employee{
     @Override
     public String toString() {
         return "HRManager{" +
+                " Kendi bilgileri: " + super.toString() +
                 "juniorDevelopers=" + Arrays.toString(juniorDevelopers) +
                 ", midDevelopers=" + Arrays.toString(midDevelopers) +
                 ", seniorDevelopers=" + Arrays.toString(seniorDevelopers) +
