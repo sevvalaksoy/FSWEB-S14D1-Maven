@@ -14,7 +14,7 @@ public class Cuboid extends Rectangle{
         this.height = height<0?0:height;
     }
     public double getVolume(){
-        return getHeight()*getArea();
+        return getHeight()*super.getArea();
     }
 
 }

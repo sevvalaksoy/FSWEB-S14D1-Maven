@@ -13,6 +13,6 @@ public class Cylinder extends Circle{
     }
 
     public double getVolume(){
-        return getArea()*getHeight();
+        return super.getArea()*getHeight();
     }
 }

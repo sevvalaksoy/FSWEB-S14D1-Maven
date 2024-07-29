@@ -1,5 +1,6 @@
 import com.workintech.cylinder.Circle;
 import com.workintech.cylinder.Cylinder;
+import com.workintech.developers.JuniorDeveloper;
 import com.workintech.pool.Cuboid;
 import com.workintech.pool.Rectangle;
 
@@ -43,5 +44,8 @@ public class Main {
         System.out.println("cuboid.height= " + cuboid.getHeight());
 
         System.out.println("cuboid.volume= " + cuboid.getVolume());
+
+        JuniorDeveloper emp1 = new JuniorDeveloper(123456, "Şevval", 50000);
+
     }
 }
